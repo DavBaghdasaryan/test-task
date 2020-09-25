@@ -2,6 +2,7 @@ body {
     margin: 0;
     background-color: #f2f3f7;
     height: 5000px;
+    font-family: 'Roboto';
 }
 
 *, *::before, *::after {
@@ -22,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
     width: 100%;
-    max-width: 1550px;
+    max-width: 1560px;
     margin: 0 auto;
 }
 
@@ -327,7 +328,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .brand_logo_place {
-    padding-top: 5px;
     width: 120px;
     height: 45px;
     background-color: #e8e8e8;
@@ -468,6 +468,9 @@ h1, h2, h3, h4, h5, h6 {
 .gallery_col {
     width: 24%;
     margin-left: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .gallery_item {
@@ -475,10 +478,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gallery_img {
-    margin-bottom: 10px;
+    opacity: .9;
     width: 100%;
-    height: auto;
-    display: block;
+}
+
+.long {
+    height: 640px;
 }
 
 .gallery_info {
@@ -518,7 +523,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .gallery_btn:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 
 /* categories */
@@ -585,7 +590,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .category:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 
 .category img {
@@ -622,7 +627,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .categories_item:hover {
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 
 .item_img {
@@ -706,7 +711,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .categories_btn:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 
 /* stock */
@@ -720,7 +725,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    font-size: 28px;
+    font-size: 23px;
     align-items: center;
     position: relative;
 }
@@ -728,7 +733,7 @@ h1, h2, h3, h4, h5, h6 {
 .stock h2::after {
     top: 50%;
     content: "";
-    width: 86%;
+    width: 87%;
     height: 1px;
     background-color: #71727d;
     position: absolute;
@@ -752,7 +757,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .previous_page:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 
 .next_page {
@@ -767,7 +772,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .next_page:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 
 .previous_page_icon {
@@ -802,7 +807,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .stock_item:hover {
-    transform: scale(1.1);
+    cursor: pointer;
+    transform: scale(1.01);
 }
 
 .stock_img {
@@ -896,7 +902,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .stock_btn:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    width: 150px;
 }
 
 /* new  */
@@ -910,7 +916,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    font-size: 28px;
+    font-size: 23px;
     align-items: center;
     position: relative;
 }
@@ -918,14 +924,14 @@ h1, h2, h3, h4, h5, h6 {
 .new h2::after {
     top: 50%;
     content: "";
-    width: 81%;
+    width: 83%;
     height: 1px;
     background-color: #71727d;
     position: absolute;
 }
 
 .products {
-    margin-top: 30px;
+    margin-top: 50px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -984,7 +990,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    font-size: 28px;
+    font-size: 23px;
     align-items: center;
     position: relative;
 }
@@ -992,7 +998,7 @@ h1, h2, h3, h4, h5, h6 {
 .discount h2::after {
     top: 50%;
     content: "";
-    width: 84%;
+    width: 86%;
     height: 1px;
     background-color: #71727d;
     position: absolute;
@@ -1011,7 +1017,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    font-size: 28px;
+    font-size: 24px;
     align-items: center;
     position: relative;
 }
@@ -1020,8 +1026,113 @@ h1, h2, h3, h4, h5, h6 {
 .bestseller h2::after {
     top: 50%;
     content: "";
+    width: 82%;
+    height: 1px;
+    background-color: #71727d;
+    position: absolute;
+}
+
+
+/* Shipping_and_payment */
+
+
+
+.shipping_and_payment_section {
+    width: 100%;
+    margin-top: 60px;
+}
+
+.shipping_and_payment {
+    width: 100%;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+.shipping_and_payment h2::after {
+    top: 50%;
+    content: "";
     width: 80%;
     height: 1px;
     background-color: #71727d;
     position: absolute;
+}
+
+
+
+.shipping_countries_and_payment_methods {
+    width: 100%;
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shipping_countries {
+    width: 642px;
+    display: flex;
+    flex-direction: column;
+}
+
+.countires {
+    width: 100%;
+    color: #7b7b86;
+    font-size: 16px;
+    border: 1px solid #dadadc;
+    background-color: white;
+    padding-left: 32px;
+    transition: all .1s linear;
+}
+
+.countires:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+
+.payment_methods {
+    width: 883px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.payment_methods p {
+    font-size: 18px;
+    color: #7b7b86;
+}
+
+.credit_card_types {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.types {
+    margin-right: 35px;
+}
+.about_payment_method {
+    width: 100%;
+    display: flex;
+}
+
+.about_payment_method pre {
+    font-size: 18px;
+    line-height: 30px;
+    color: #3a3a3a;
+    }
+
+
+.shipping_method {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.methods {
+    background-color: white;
+    margin-right: 26px;
 }
