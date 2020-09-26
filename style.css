@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background-color: #f2f3f7;
-    height: 5000px;
+    height: 8000px;
     font-family: 'Roboto';
 }
 
@@ -1004,9 +1004,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
 }
 
-
-
-/* bestseller */ 
+/* bestseller */
 
 .bestseller_section {
     width: 100%;
@@ -1022,7 +1020,6 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
-
 .bestseller h2::after {
     top: 50%;
     content: "";
@@ -1032,10 +1029,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
 }
 
-
 /* Shipping_and_payment */
-
-
 
 .shipping_and_payment_section {
     width: 100%;
@@ -1051,17 +1045,15 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
-
 .shipping_and_payment h2::after {
+    margin-left: 8px;
     top: 50%;
     content: "";
-    width: 80%;
+    width: 79%;
     height: 1px;
     background-color: #71727d;
     position: absolute;
 }
-
-
 
 .shipping_countries_and_payment_methods {
     width: 100%;
@@ -1091,7 +1083,6 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.01);
 }
 
-
 .payment_methods {
     width: 883px;
     display: flex;
@@ -1108,12 +1099,12 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     display: flex;
     align-items: center;
-
 }
 
 .types {
     margin-right: 35px;
 }
+
 .about_payment_method {
     width: 100%;
     display: flex;
@@ -1123,8 +1114,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
     line-height: 30px;
     color: #3a3a3a;
-    }
-
+}
 
 .shipping_method {
     width: 100%;
@@ -1135,4 +1125,200 @@ h1, h2, h3, h4, h5, h6 {
 .methods {
     background-color: white;
     margin-right: 26px;
+}
+
+/* about us */
+
+.about_us_section {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.about_us {
+    width: 100%;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.about_us h2::after {
+    margin-left: 58px;
+    top: 50%;
+    content: "";
+    width: 90%;
+    height: 1px;
+    background-color: #71727d;
+    position: absolute;
+}
+
+.about_text {
+    width: 1510px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.text {
+    font-size: 20px;
+    line-height: 30px;
+    color: #4d4d4e;
+}
+
+/* photos and videos */
+
+.photos_and_videos_section {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.photos_and_videos_head {
+    width: 100%;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.photos_and_videos_head h2::after {
+    top: 50%;
+    content: "";
+    width: 80%;
+    height: 1px;
+    background-color: #71727d;
+    position: absolute;
+}
+
+.photos_and_videos {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.photos {
+    margin-right: 20px;
+}
+
+/* why we */
+
+.why_we_section {
+    width: 100%;
+    margin-top: 65px;
+}
+
+.why_we {
+    width: 100%;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.why_we h2::after {
+    margin-left: 17px;
+    top: 50%;
+    content: "";
+    width: 85%;
+    height: 1px;
+    background-color: #71727d;
+    position: absolute;
+}
+
+.why_choose_us {
+    margin-top: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.security {
+    background-color: #fff;
+    width: 506px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #d3d3d3;
+
+}
+
+.security_name_and_text {
+    display: flex;
+    flex-direction: column;
+    max-width: 277px;
+    font-size: 14px;
+    color: #616161;
+    padding-left: 70px;
+}
+
+.sales_name_and_text {
+    display: flex;
+    flex-direction: column;
+    max-width: 277px;
+    font-size: 14px;
+    color: #616161;
+    padding-left: 70px;
+}
+
+.return_name_and_text {
+    display: flex;
+    flex-direction: column;
+    max-width: 277px;
+    font-size: 14px;
+    color: #616161;
+    padding-left: 70px;
+}
+.return_name_and_text h2 {
+    font-size: 20px;
+    color: #000;
+    line-height: 15px;
+}
+
+.sales_name_and_text h2 {
+    font-size: 20px;
+    color: #000;
+    line-height: 15px;
+}
+
+
+.security_name_and_text h2 {
+    font-size: 20px;
+    color: #000;
+    line-height: 15px;
+}
+
+.name_and_text pre {
+    line-height: 15px;
+    font-weight: 500;
+}
+
+.security_icon {
+    width: 80px;
+    height: 65px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.sales {
+    background-color: #fff;
+    width: 506px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #d3d3d3;
+}
+
+.return {
+    background-color: #fff;
+    width: 506px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #d3d3d3;
+
 }
